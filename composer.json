@@ -1,12 +1,12 @@
 {
-    "name": "ilya/belt",
+    "name": "util/belt",
     "description": "A handful of tools for PHP developers.",
     "keywords": ["php", "utilities", "tools", "arrays", "collections", "objects", "functions"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Ilya S",
-            "email": "public.ilya.s@gmail.com"
+            "name": "hmy",
+            "email": "anonymous@gmail.com"
         }
     ],
     "require": {
