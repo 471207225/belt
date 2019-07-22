@@ -52,5 +52,39 @@ class Utilities {
         }
     }
 
+
+    public function getStringMapping()
+    {
+        $numList = str_split('0123456789');
+        $strList = str_split('ZXCVBNMASD');
+
+        return [$numList,$strList];
+    }
+
+    /**
+     * 数字转字母
+     * @param $number
+     * @return string
+     */
+    public function number2letter($number)
+    {
+        $number = str_split($number);
+        list($numList,$letterList) = $this->getStringMapping();
+
+        return implode(str_replace($numList,$letterList,$number));
+    }
+
+    /**
+     * 字母转数字
+     * @param $letters
+     * @return string
+     */
+    public function letter2number($letters)
+    {
+        $letters = str_split($letters);
+        list($numList,$letterList) = $this->getStringMapping();
+
+        return implode(str_replace($letterList,$numList,$letters));
+    }
 }
 

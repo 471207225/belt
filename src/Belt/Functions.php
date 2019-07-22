@@ -78,7 +78,7 @@ class Functions {
      * Execute $closure only once and ignore future calls.
      *
      * @param Closure $closure
-     * @return void
+     * @return mixed
      */
     public function once(Closure $closure)
     {
@@ -86,10 +86,12 @@ class Functions {
 
         if ( ! isset ($this->called[$hash]))
         {
-            $closure();
+            $result = $closure();
 
-            $this->called[$hash] = true;
+            $this->called[$hash] = $result;
         }
+
+        return $this->called[$hash];
     }
 
     /**
