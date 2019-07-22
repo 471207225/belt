@@ -1,5 +1,5 @@
 {
-    "name": "util/belt",
+    "name": "h-util/belt",
     "description": "A handful of tools for PHP developers.",
     "keywords": ["php", "utilities", "tools", "arrays", "collections", "objects", "functions"],
     "license": "MIT",
